@@ -8,6 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit:'50mb' }));
 
+import db from "./db/db.js";
+
 
 app.get('/', async (req,res) => {
     res.send('Hello World!');
